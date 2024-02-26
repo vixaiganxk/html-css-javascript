@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <h1 id="title"> Cafe-Day Survey Form </h1>
+        <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, sapiente!</p>
+    <section>
+        <form id="survey-form">
+            <fieldset>
+                <legend></legend>
+                <legend class="legends">Name</legend>
+                <label id="labname"><input id="name" type="text" placeholder="  Enter your name" maxlength="50" required></label>
+                <legend class="legends">Email</legend>
+                <label><input id="email" type="email" placeholder="  Enter your Email" required inputmode="email"></label>
+                <legend class="legends">Age</legend>
+                <label><input id="age" type="number" placeholder="  Age" max="100" min="1" maxlength="3" required></label>
+                <legend class="legends">Gender</legend>
+                <fieldset id="genderfield">
+                    <label for="male"><input type="radio" name="gender" id="male" value="male">Male</label>
+                    <label for="female"> <input type="radio" name="gender" id="female" value="female">Female</label>
+                </fieldset>
+                <legend class="legends">Mobile Number</legend>
+                <label><input id="mobile" type="tel" placeholder="  Mobile Number" maxlength="10" required inputmode="tel"></label>
+                <legend>What do you like to see improved?</legend>
+                <!-- Create a dropdown input -->
+                <select id="coffees" name="coffe">
+                    <!-- Define options -->
+                    <option value="frenchvanilla">  French Vanilla</option>
+                    <option value="caramelmacchiato">  Caramel Macchiato</option>
+                    <option value="hazelnul">  Hazelnut</option>
+                    <option value="mocha">  Mocha</option>
+                    <option value="pupkinspice">  Pumpkin Spice</option>
+                </select>
+                <legend class="legends">Any comments or suggestions?</legend>
+                <label for="message" class="legends"></label><br>
+                <!-- Create a textarea -->
+                <textarea id="message" name="message" placeholder= "  What's on your mind???"></textarea>
+                <button type="submit">Submit</button>
+            </fieldset>
+            
+        </form>
+    </section>
+    </main>
+</body>
+</html>
