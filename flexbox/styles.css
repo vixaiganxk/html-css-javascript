@@ -12,6 +12,9 @@
     text-align: center;
 }
 
+.gallery {
+    display: flex;
+}
 
 .gallery img {
     width: 100%;
